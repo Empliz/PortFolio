@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empliz Innovations Pvt. Ltd.</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- AOS Init Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="w-full bg-gray-800 shadow-md fixed top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-wide text-blue-400">
+        Empliz Innovations
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8 text-gray-300 font-medium">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#vision" class="hover:text-white transition">Our Vision</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden focus:outline-none" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="hidden md:hidden bg-gray-800 px-4 pb-4">
+      <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+      <a href="#services" class="block py-2 text-gray-300 hover:text-white">Services</a>
+      <a href="#projects" class="block py-2 text-gray-300 hover:text-white">Projects</a>
+      <a href="#vision" class="block py-2 text-gray-300 hover:text-white">Our Vision</a>
+      <a href="#contact" class="block py-2 text-gray-300 hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="pt-28 flex flex-col items-center justify-center min-h-[80vh] text-center px-4">
+    <h1 class="text-4xl font-bold tracking-widest text-blue-400 uppercase">Empliz Innovations Pvt. Ltd.</h1>
+    <p class="mt-3 text-lg text-gray-300">Empowering Innovations, Building the Future</p>
+    <a href="#contact" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg transition duration-300">
+      Get Started
+    </a>
+  </main>
+
+<!-- About Us Section -->
+<section class="bg-gray-900 text-white py-20 px-6" id="about">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-400 mb-4" data-aos="fade-up">About Us</h2>
+      <p class="text-lg text-gray-300" data-aos="fade-up" data-aos-delay="100">
+        Empliz Innovations Pvt. Ltd. is a dynamic tech-driven company dedicated to transforming ideas into scalable digital solutions. We specialize in full-stack development, business automation, and smart tech solutions that empower businesses to thrive in the modern digital world.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Left: Company Details -->
+      <div class="space-y-6" data-aos="fade-right">
+        <h3 class="text-2xl font-semibold text-blue-300">Who We Are</h3>
+        <p class="text-gray-300">
+          Founded by a team of passionate innovators, Empliz Innovations focuses on delivering powerful digital solutions tailored to client needs. We combine creativity, technology, and strategy to craft experiences that inspire and perform.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-blue-300">Our Mission</h3>
+        <p class="text-gray-300">
+          To empower businesses and startups through intelligent design, modern web and app development, and seamless integration of smart technologies.
+        </p>
+
+        <h3 class="text-2xl font-semibold text-blue-300">Our Values</h3>
+        <ul class="list-disc pl-5 text-gray-300 space-y-1">
+          <li>Innovation First</li>
+          <li>Client-Centered Development</li>
+          <li>Transparency and Integrity</li>
+          <li>Agile and Scalable Solutions</li>
+        </ul>
+      </div>
+
+      <!-- Right: Animated Images -->
+      <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+  <img src="https://t4.ftcdn.net/jpg/03/84/55/29/360_F_384552930_zPoe9zgmCF7qgt8fqSedcyJ6C6Ye3dFs.jpg" alt="Office" class="rounded-xl shadow-md w-full h-56 object-cover">
+  <img src="https://www.workitdaily.com/media-library/team-meets-to-get-to-the-performing-stage-of-team-development.jpg?id=22930898&width=800&quality=85" alt="Team" class="rounded-xl shadow-md w-full h-56 object-cover">
+  <img src="https://action-point.com/wp-content/uploads/2014/10/Software-Development-Team.jpg" alt="Development" class="rounded-xl shadow-md w-full h-56 object-cover">
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/019/799/536/small/businessman-touch-growth-data-chart-arrow-with-diagram-2023-budget-businessman-pointing-arrow-graph-corporate-future-growth-year-2022-to-2023-development-to-success-and-motivation-photo.jpg" alt="Growth" class="rounded-xl shadow-md w-full h-56 object-cover">
+</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section class="bg-gray-800 text-white py-20 px-6" id="projects">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-blue-400 mb-4">Our Projects</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto">
+        Explore some of the innovative projects we have delivered for our clients. Each project demonstrates our commitment to quality and cutting-edge technology.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project Card 1 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://spotcareer.in" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            SpotCareer
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          A dynamic job portal designed to connect employers with the best talent efficiently.
+        </p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://empliz.in" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            Empliz
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          A comprehensive HR solutions platform helping businesses manage recruitment and workforce efficiently.
+        </p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://hire-ind.in" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            Hire-Ind
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          An innovative hiring platform designed to simplify recruitment processes for companies.
+        </p>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://velosysoverseas.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            VelosysOverseas
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          A platform connecting job seekers with overseas employment opportunities in various sectors.
+        </p>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://v-quartet.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            V-Quartet
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          A creative agency website showcasing digital marketing and branding services.
+        </p>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+          <a href="https://augusitsolutions.in" target="_blank" rel="noopener noreferrer" class="hover:underline">
+            AugusItSolutions
+          </a>
+        </h3>
+        <p class="text-gray-300 mb-4">
+          IT consulting and solutions provider focused on delivering customized business software.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-900 text-white py-20 px-6" id="featured-projects">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-4">Ongoing IT Projects</h2>
+      <p class="text-gray-400 max-w-3xl mx-auto">
+        Highlighting some of our key projects that showcase our expertise and innovation.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <!-- Featured Project 1 -->
+      <div class="bg-yellow-700 bg-opacity-20 rounded-xl shadow-lg p-6 hover:bg-yellow-700 hover:text-gray-900 transition-colors duration-300" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold mb-2">NRI Aadhar</h3>
+        <p class="text-yellow-300">
+          Simplifying NRI Aadhaar registration and updates with a secure, user-friendly platform.
+        </p>
+      </div>
+
+      <!-- Featured Project 2 -->
+      <div class="bg-yellow-700 bg-opacity-20 rounded-xl shadow-lg p-6 hover:bg-yellow-700 hover:text-gray-900 transition-colors duration-300" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold mb-2">LoanWala</h3>
+        <p class="text-yellow-300">
+          A seamless loan application and management system helping users get loans quickly and safely.
+        </p>
+      </div>
+
+      <!-- Featured Project 3 -->
+      <div class="bg-yellow-700 bg-opacity-20 rounded-xl shadow-lg p-6 hover:bg-yellow-700 hover:text-gray-900 transition-colors duration-300" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold mb-2">E-Commerce</h3>
+        <p class="text-yellow-300">
+          A feature-rich e-commerce platform with integrated payment gateways and smooth user experience.
+        </p>
+      </div>
+
+      <!-- Featured Project 4 -->
+      <div class="bg-yellow-700 bg-opacity-20 rounded-xl shadow-lg p-6 hover:bg-yellow-700 hover:text-gray-900 transition-colors duration-300" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold mb-2">Rental</h3>
+        <p class="text-yellow-300">
+          A comprehensive rental management system for properties, vehicles, and equipment.
+        </p>
+      </div>
+
+      <!-- Featured Project 5 -->
+      <div class="bg-yellow-700 bg-opacity-20 rounded-xl shadow-lg p-6 hover:bg-yellow-700 hover:text-gray-900 transition-colors duration-300" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold mb-2">GetInfo</h3>
+        <p class="text-yellow-300">
+          An innovative information aggregation platform delivering real-time updates and insights.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GMB Listings Section -->
+<!-- GMB Listings Section -->
+<section class="bg-gray-800 text-white py-20 px-6" id="gmb-listings">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-green-400 mb-4">GMB Listings We Managed</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto">
+        We created and managed Google My Business listings for the following projects, ensuring strong local presence and engagement.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- GMB Listing 1 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-green-300 text-center mb-2">SpotCareer</h3>
+        <p class="text-gray-300">
+          Created and optimized the GMB listing for SpotCareer.in, enhancing search visibility and customer engagement.
+        </p>
+      </div>
+
+      <!-- GMB Listing 2 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-green-300 text-center mb-2">Empliz</h3>
+        <p class="text-gray-300">
+          Managed the GMB profile for Empliz.in to boost local SEO and maintain accurate business information.
+        </p>
+      </div>
+
+      <!-- GMB Listing 3 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-green-300 mb-2 text-center">Hire-ind</h3>
+        <p class="text-gray-300">
+          Created and maintained the GMB listing for Hire-ind.in, ensuring updated contact details and reviews.
+        </p>
+      </div>
+
+      <!-- GMB Listing 4 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold text-green-300 text-center mb-2">Velosysoverseas</h3>
+        <p class="text-gray-300">
+          Enhanced GMB presence for Velosysoverseas.com to increase local trust and global reach.
+        </p>
+      </div>
+
+      <!-- GMB Listing 5 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold text-green-300 text-center mb-2">V-Quartet</h3>
+        <p class="text-gray-300">
+          Developed and optimized the GMB listing for V-Quartet.com, improving brand awareness.
+        </p>
+      </div>
+
+      <!-- GMB Listing 6 -->
+      <div class="bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="text-2xl font-semibold text-green-300 text-center mb-2">AugusitSolutions</h3>
+        <p class="text-gray-300">
+          Managed the GMB listing for AugusitSolutions.in to maintain accuracy and enhance user interaction.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Leads Section -->
+<section class="bg-gray-900 text-white py-20 px-6" id="leads">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-4">Leads We Generate</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto">
+        At Empliz Innovations, we generate high-quality leads across various sectors to ensure business growth and reach.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Educational Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Educational</h3>
+        <p class="text-gray-300">
+          We provide leads for schools, colleges, and training institutions looking to expand their student base or promote new courses.
+        </p>
+      </div>
+
+      <!-- Real Estate Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Real Estate</h3>
+        <p class="text-gray-300">
+          Qualified leads for residential and commercial properties, helping builders and agents close deals faster.
+        </p>
+      </div>
+
+      <!-- Hospital Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Hospital</h3>
+        <p class="text-gray-300">
+          We support hospitals with patient inquiries and appointment bookings through verified and local lead generation.
+        </p>
+      </div>
+
+      <!-- Consultant Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Consultant</h3>
+        <p class="text-gray-300">
+          Leads for visa, career, legal, and education consultants who aim to grow their clientele quickly.
+        </p>
+      </div>
+
+      <!-- Brand Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Brand</h3>
+        <p class="text-gray-300">
+          Build your brand identity with leads targeted toward your niche audience and potential customers.
+        </p>
+      </div>
+
+      <!-- Sales Leads -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="600">
+        <h3 class="text-2xl font-semibold text-yellow-300 mb-2">Sales</h3>
+        <p class="text-gray-300">
+          Generate leads that convert into direct sales for products and services in various industries.
+        </p>
+      </div>
+
+      <!-- Traffic Leads -->
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section id="testimonials" class="bg-gray-900 text-white py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-yellow-400 mb-12">What Our Clients Say</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 class="text-2xl font-semibold text-green-400 mb-2">Ravi Kumar</h3>
+          <p class="text-gray-300 mb-4">"Empliz Innovations delivered our project on time and exceeded our expectations. Highly professional and responsive!"</p>
+          <div class="flex justify-center text-yellow-400 text-xl">
+            ★★★★★
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 class="text-2xl font-semibold text-green-400 mb-2">Sneha Patel</h3>
+          <p class="text-gray-300 mb-4">"Amazing service and support. The team at Empliz really understood our needs and delivered perfectly."</p>
+          <div class="flex justify-center text-yellow-400 text-xl">
+            ★★★★☆
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 class="text-2xl font-semibold text-green-400 mb-2">Arjun Rao</h3>
+          <p class="text-gray-300 mb-4">"Great experience working with Empliz. They built us a fantastic website and helped boost our online presence."</p>
+          <div class="flex justify-center text-yellow-400 text-xl">
+            ★★★★★
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'slide',
+  });
+</script>
+
+
+<section id="contact" class="bg-gray-800 text-white py-20 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Image on Left -->
+    <div data-aos="fade-right">
+      <img src="https://www.shutterstock.com/image-photo/hand-show-icon-address-phone-600nw-2475999141.jpg" alt="Contact Us" class="w-full h-auto rounded-xl shadow-lg">
+    </div>
+
+    <!-- Contact Info on Right -->
+    <div class="text-left space-y-6" data-aos="fade-left">
+      <h2 class="text-4xl font-bold text-yellow-400">Contact Us</h2>
+      <p class="text-gray-300">Get in touch with us for any inquiries, collaborations, or support.</p>
+
+      <div class="space-y-4">
+        <!-- Phone -->
+        <div class="flex items-start space-x-4">
+          <div class="text-green-400 text-2xl">📞</div>
+          <div>
+            <h4 class="text-xl font-semibold text-green-300">Phone</h4>
+            <a href="tel:6303359668" class="text-gray-300 hover:text-white">+91 63033 59668</a>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="flex items-start space-x-4">
+          <div class="text-green-400 text-2xl">💬</div>
+          <div>
+            <h4 class="text-xl font-semibold text-green-300">WhatsApp</h4>
+            <a href="https://wa.me/916303359668" target="_blank" class="text-gray-300 hover:text-white">+91 63033 59668</a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-start space-x-4">
+          <div class="text-green-400 text-2xl">📧</div>
+          <div>
+            <h4 class="text-xl font-semibold text-green-300">Email</h4>
+            <a href="mailto:contact@empliz.in" class="text-gray-300 hover:text-white">contact@empliz.in</a>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="flex items-start space-x-4">
+          <div class="text-green-400 text-2xl">📍</div>
+          <div>
+            <h4 class="text-xl font-semibold text-green-300">Office Address</h4>
+            <a href="https://maps.app.goo.gl/1WMtApwouZYTZrHXA" target="_blank" class="text-gray-300 hover:text-white">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-gray-950 text-white py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- About Section -->
+    <div>
+      <h3 class="text-2xl font-bold text-green-400 mb-4">About Us</h3>
+      <p class="text-gray-400">
+        Empliz Innovations is a one-stop solution for web development, branding, digital marketing, and lead generation. We help businesses grow with modern tools and smart digital strategies.
+      </p>
+    </div>
+
+    <!-- Services Section -->
+    <div>
+      <h3 class="text-2xl font-bold text-green-400 mb-4">Services</h3>
+      <ul class="text-gray-400 space-y-2">
+        <li>✔ Web Design & Development</li>
+        <li>✔ Google My Business Listings</li>
+        <li>✔ SEO & Local Marketing</li>
+        <li>✔ Lead Generation</li>
+        <li>✔ Branding & Consulting</li>
+      </ul>
+    </div>
+
+    <!-- Social Media Section -->
+    <div>
+      <h3 class="text-2xl font-bold text-green-400 mb-4">Follow Us</h3>
+      <div class="flex space-x-4 mt-4">
+        <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-green-400 text-xl">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-green-400 text-xl">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-green-400 text-xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-green-400 text-xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-green-400 text-xl">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-gray-500 mt-10 border-t border-gray-700 pt-6 text-sm">
+    © 2025 Empliz Innovations. All rights reserved.
+  </div>
+</footer>
+
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
